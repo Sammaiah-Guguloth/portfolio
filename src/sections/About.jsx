@@ -25,7 +25,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="c-space my-20">
+    <section id="about" className="c-space my-16">
       <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         {/* Card 1 */}
         <motion.div

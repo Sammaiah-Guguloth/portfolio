@@ -7,7 +7,7 @@ import TechSlider from "../components/TechSlider";
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen w-full flex flex-col relative">
-      <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
+      <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-8">
         <motion.p
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -29,16 +29,16 @@ const Hero = () => {
         <div className="w-full h-full inset-0">
           <TechSlider />
         </div>
-      </div>
 
-      <div className="absolute bottom-15  md:bottom-2 left-0 right-0 w-full z-10 c-space">
-        <a href="#about" className="w-fit">
-          <Button
-            name="Let's work together"
-            isBeam
-            containerClass="sm:w-fit w-full sm:min-w-96"
-          />
-        </a>
+        <div className="w-full mt-9 z-10 c-space">
+          <a href="#about" className="w-fit">
+            <Button
+              name="Let's work together"
+              isBeam
+              containerClass="sm:w-fit w-full sm:min-w-96"
+            />
+          </a>
+        </div>
       </div>
     </section>
   );

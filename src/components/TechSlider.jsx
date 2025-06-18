@@ -7,7 +7,7 @@ const TechSlider = () => {
 
   return (
     <div className="w-full overflow-hidden bg-[#0b0b0b] mt-2 rounded-2xl px-6 py-10 shadow-xl relative">
-      <div className="animate-slider flex whitespace-nowrap gap-16 will-change-transform">
+      <div className="animate-slider flex whitespace-nowrap gap-12 md:gap-16 will-change-transform">
         {duplicatedStack.map((tech, index) => (
           <div
             key={index}
@@ -16,7 +16,7 @@ const TechSlider = () => {
             <motion.img
               src={tech.icon}
               alt={tech.name}
-              className="w-30 h-30 md:w-40 md:h-40 object-contain"
+              className="w-24 h-24 md:w-40 md:h-40 object-contain"
               animate={{ y: [0, -10, 0] }}
               transition={{
                 duration: 3,
